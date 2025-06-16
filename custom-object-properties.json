@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    {
+      "fieldType": "text",
+      "name": "publisher",
+      "label": "Publisher",
+      "type": "string",
+      "description": "The publisher of the video game",
+      "hasUniqueValue": false,
+      "formField": true,
+      "hidden": false
+    },
+    {
+      "fieldType": "number",
+      "name": "price",
+      "label": "Price",
+      "type": "number",
+      "description": "The price of the video game",
+      "hasUniqueValue": false,
+      "formField": true,
+      "hidden": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "requiredProperties": [
+    "name"
+  ],  "searchableProperties": [
+    "name"
+  ],
+  "primaryDisplayProperty": "name",
+  "name": "video_games",
+  "description": "Custom Object for Video Game Management",
+  "associatedObjects": ["0-1"],
+  "properties": [
+    {
+      "name": "name",
+      "label": "Name",
+      "isPrimaryDisplayLabel": true,
+      "hasUniqueValue": false
+    }
+  ],
+  "labels": {
+    "plural": "Video Games",
+    "singular": "Video Game"
+  }
+}

@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet" href="/css/style.css")
+    body
+        .container
+            h1 Custom Object Table
+            
+            .actions
+                a(href="/update-cobj" class="add-link") Add to this table
+            
+            if error
+                .error= error
+            
+            if customObjects && customObjects.length > 0
+                table.custom-table
+                    thead
+                        tr
+                            th.name-header Name
+                            th.publisher-header Publisher
+                            th.price-header Price
+                    tbody
+                        each object in customObjects
+                            tr
+                                td= object.properties.name || 'N/A'
+                                td= object.properties.publisher || 'N/A'
+                                td= object.properties.price || 'N/A'
+            else
+                .no-data
+                    p No custom objects found. 
+                    a(href="/update-cobj") Create your first video game entry!

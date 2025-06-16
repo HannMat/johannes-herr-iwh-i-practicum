@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet" href="/css/style.css")
+    body
+        .container
+            h1 Add New Video Game
+            
+            .navigation
+                a(href="/" class="return-link") Return to the homepage
+            
+            form(method="POST" action="/update-cobj" class="game-form")
+                .form-group
+                    label(for="name") Name*:
+                    input(type="text" id="name" name="name" required placeholder="Enter game name")
+                
+                .form-group
+                    label(for="publisher") Publisher:
+                    input(type="text" id="publisher" name="publisher" placeholder="Enter publisher name")
+                
+                .form-group
+                    label(for="price") Price:
+                    input(type="number" id="price" name="price" min="0" step="0.01" placeholder="Enter price")
+                
+                .form-actions
+                    button(type="submit" class="submit-btn") Add Video Game
+                    a(href="/" class="cancel-btn") Cancel
